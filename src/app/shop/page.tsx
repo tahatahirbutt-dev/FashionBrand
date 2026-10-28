@@ -1,7 +1,11 @@
 import Link from "next/link";
 import { brand } from "@/config/brand";
+import { ProductGrid } from "@/components/product/ProductGrid";
+import { getProducts } from "@/lib/products";
 
-export default function ShopPage() {
+export default async function ShopPage() {
+  const products = await getProducts();
+
   return (
     <div className="bg-background px-6 py-16 text-foreground">
       <div className="mx-auto max-w-6xl">
@@ -20,6 +24,15 @@ export default function ShopPage() {
             </Link>
           ))}
         </div>
+        <section className="mt-24">
+          <p className="text-sm uppercase tracking-[0.3em] text-accent">
+            All products
+          </p>
+          <h2 className="mt-4 font-heading text-5xl">The collection</h2>
+          <div className="mt-10">
+            <ProductGrid products={products} />
+          </div>
+        </section>
       </div>
     </div>
   );

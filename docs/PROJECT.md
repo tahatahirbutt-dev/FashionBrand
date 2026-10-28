@@ -55,7 +55,7 @@
 - [x] Next.js project created and running
 - [x] Theme tokens + fonts in place
 - [x] Layout shell: Header (nav from config), Footer, placeholder Home
-- [ ] ProductCard + ProductGrid with mock data
+- [x] ProductCard + ProductGrid with mock data
 - [ ] Category and product pages
 - [ ] Medusa running locally, real data
 - [ ] Cart, checkout, payments
@@ -69,3 +69,4 @@
 | 2026-10-28 | Theme via CSS variable tokens | Design must be replaceable without touching components |
 | 2026-10-28 | Navigation/categories from config file | New product lines without redesign |
 | 2026-10-28 | Backend (Medusa vs Shopify) deferred until payment/market answers | Avoid lock-in to wrong gateway |
+| 2026-10-28 | Data access via `src/lib/products.ts` | Swapping to Medusa later changes one file |

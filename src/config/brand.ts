@@ -1,6 +1,8 @@
 export const brand = {
   name: "Your Brand",
   tagline: "Thoughtfully made essentials",
+  currency: "PKR",
+  locale: "en-PK",
   categories: [
     { slug: "fragrances", label: "Fragrances" },
     { slug: "apparel", label: "Apparel" },

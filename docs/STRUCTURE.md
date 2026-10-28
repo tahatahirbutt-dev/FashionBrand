@@ -52,6 +52,10 @@ src/
  ├─ config/
  │   └─ brand.ts              # name, tagline, nav, categories
  └─ lib/                      # helpers, API calls (Medusa later)
+     ├─ types.ts              # shared product types
+     ├─ products.ts           # product data-access functions
+     ├─ mock-products.ts      # temporary local catalogue
+     └─ format.ts             # display formatting helpers
 ```
 
 ## 5. Brand config (`src/config/brand.ts`)
