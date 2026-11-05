@@ -12,16 +12,16 @@ export function ProductCard({ product }: { product: Product }) {
         {main ? (
           <>
             <Image
-              src={main}
-              alt={product.name}
+              src={main.src}
+              alt={main.alt}
               fill
               sizes="(min-width: 1024px) 25vw, 50vw"
               className="object-cover"
             />
             {hover && (
               <Image
-                src={hover}
-                alt=""
+                src={hover.src}
+                alt={hover.alt}
                 fill
                 sizes="(min-width: 1024px) 25vw, 50vw"
                 className="object-cover opacity-0 transition-opacity duration-500 group-hover:opacity-100"

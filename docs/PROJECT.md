@@ -70,3 +70,8 @@
 | 2026-10-28 | Navigation/categories from config file | New product lines without redesign |
 | 2026-10-28 | Backend (Medusa vs Shopify) deferred until payment/market answers | Avoid lock-in to wrong gateway |
 | 2026-10-28 | Data access via `src/lib/products.ts` | Swapping to Medusa later changes one file |
+
+## Portfolio goal
+- This project is also a portfolio piece for Taha (CV target: full-stack, React/Next.js gap).
+- Needs: live deployment (Vercel), case study write-up, n8n order automation, Medusa integration.
+- Rule: Taha must be able to explain every piece of code. Explain React concepts as they appear.

@@ -1,12 +1,20 @@
 import { mockProducts } from "./mock-products";
-import type { Product } from "./types";
+import type { Category, Product } from "./types";
 
-export async function getProducts(category?: string): Promise<Product[]> {
+export async function getProducts(category?: Category): Promise<Product[]> {
   return category
     ? mockProducts.filter((product) => product.category === category)
     : mockProducts;
 }
 
-export async function getProduct(slug: string): Promise<Product | undefined> {
+export async function getAllProducts(): Promise<Product[]> {
+  return mockProducts;
+}
+
+export async function getProductBySlug(
+  slug: string,
+): Promise<Product | undefined> {
   return mockProducts.find((product) => product.slug === slug);
 }
+
+export const getProduct = getProductBySlug;
