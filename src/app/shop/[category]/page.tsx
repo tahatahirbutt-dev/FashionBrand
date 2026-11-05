@@ -1,6 +1,7 @@
 import { notFound } from "next/navigation";
 import { brand } from "@/config/brand";
 import { ProductGrid } from "@/components/product/ProductGrid";
+import Container from "@/components/ui/Container";
 import { getProducts } from "@/lib/products";
 
 type CategoryPageProps = {
@@ -24,8 +25,8 @@ export default async function CategoryPage({ params }: CategoryPageProps) {
   const products = await getProducts(category.slug);
 
   return (
-    <div className="bg-background px-6 py-16 text-foreground">
-      <div className="mx-auto max-w-6xl">
+    <div className="bg-background py-16 text-foreground">
+      <Container>
         <p className="text-sm uppercase tracking-[0.3em] text-accent">
           Shop
         </p>
@@ -33,7 +34,7 @@ export default async function CategoryPage({ params }: CategoryPageProps) {
         <div className="mt-12">
           <ProductGrid products={products} />
         </div>
-      </div>
+      </Container>
     </div>
   );
 }

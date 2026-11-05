@@ -18,6 +18,7 @@ type ProductBase = {
   price: number;
   images: ProductImage[];
   badge?: "New" | "Bestseller";
+  featured?: boolean;
 };
 
 export type FragranceProduct = ProductBase & {

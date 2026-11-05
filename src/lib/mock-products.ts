@@ -11,13 +11,14 @@ export const mockProducts: Product[] = [
     price: 8500,
     description: "A smoky, resinous signature scent with a warm finish.",
     badge: "Bestseller",
+    featured: true,
     images: [
       image(
-        "https://images.unsplash.com/photo-1594035910387-fea47794261f?w=1200&q=85",
+        "/products/oud-noir-1.jpg",
         "Oud Noir fragrance bottle",
       ),
       image(
-        "https://images.unsplash.com/photo-1615634260167-c8cdede054de?w=1200&q=85",
+        "/products/oud-noir-2.jpg",
         "Oud Noir fragrance styled with botanicals",
       ),
     ],
@@ -39,11 +40,11 @@ export const mockProducts: Product[] = [
     badge: "New",
     images: [
       image(
-        "https://images.unsplash.com/photo-1541643600914-78b084683601?w=1200&q=85",
+        "/products/amber-veil-1.jpg",
         "Amber Veil fragrance bottle",
       ),
       image(
-        "https://images.unsplash.com/photo-1592945403244-b3fbafd7f539?w=1200&q=85",
+        "/products/amber-veil-2.jpg",
         "Amber Veil fragrance on a stone surface",
       ),
     ],
@@ -62,13 +63,14 @@ export const mockProducts: Product[] = [
     category: "apparel",
     price: 6500,
     description: "A relaxed linen layer designed for warm, easy days.",
+    featured: true,
     images: [
       image(
-        "https://images.unsplash.com/photo-1596755389378-c31d21fd1273?w=1200&q=85",
+        "/products/linen-overshirt-1.jpg",
         "Natural linen overshirt",
       ),
       image(
-        "https://images.unsplash.com/photo-1515886657613-9f3515b0c78f?w=1200&q=85",
+        "/products/linen-overshirt-2.jpg",
         "Linen overshirt styled for everyday wear",
       ),
     ],
@@ -94,11 +96,11 @@ export const mockProducts: Product[] = [
     badge: "New",
     images: [
       image(
-        "https://images.unsplash.com/photo-1521572163474-6864f9cf17ab?w=1200&q=85",
+        "/products/heavy-cotton-tee-1.jpg",
         "Heavy cotton tee",
       ),
       image(
-        "https://images.unsplash.com/photo-1503341504253-dff4815485f1?w=1200&q=85",
+        "/products/heavy-cotton-tee-2.jpg",
         "Heavy cotton tee styled on a model",
       ),
     ],
@@ -121,13 +123,14 @@ export const mockProducts: Product[] = [
     category: "jewellery",
     price: 4800,
     description: "A weighty stainless-steel chain with a polished finish.",
+    featured: true,
     images: [
       image(
-        "https://images.unsplash.com/photo-1611652022419-a9419f74343d?w=1200&q=85",
+        "/products/steel-chain-bracelet-1.jpg",
         "Stainless steel chain bracelet",
       ),
       image(
-        "https://images.unsplash.com/photo-1573408301185-9146fe634dcb?w=1200&q=85",
+        "/products/steel-chain-bracelet-2.jpg",
         "Steel chain bracelet detail",
       ),
     ],
@@ -146,11 +149,11 @@ export const mockProducts: Product[] = [
     badge: "Bestseller",
     images: [
       image(
-        "https://images.unsplash.com/photo-1605100804763-247f67b3557e?w=1200&q=85",
+        "/products/signet-ring-1.jpg",
         "Brushed metal signet ring",
       ),
       image(
-        "https://images.unsplash.com/photo-1598560917807-1bae44bd2be8?w=1200&q=85",
+        "/products/signet-ring-2.jpg",
         "Signet ring worn on a hand",
       ),
     ],
@@ -166,13 +169,14 @@ export const mockProducts: Product[] = [
     category: "accessories",
     price: 3900,
     description: "A slim leather cardholder made for the essentials.",
+    featured: true,
     images: [
       image(
-        "https://images.unsplash.com/photo-1627123424574-724758594e93?w=1200&q=85",
+        "/products/leather-cardholder-1.jpg",
         "Leather cardholder",
       ),
       image(
-        "https://images.unsplash.com/photo-1553062407-98eeb64c6a62?w=1200&q=85",
+        "/products/leather-cardholder-2.jpg",
         "Leather cardholder with everyday accessories",
       ),
     ],
@@ -187,11 +191,11 @@ export const mockProducts: Product[] = [
     description: "A durable everyday tote with room for the things you carry.",
     images: [
       image(
-        "https://images.unsplash.com/photo-1544816155-12df9643f363?w=1200&q=85",
+        "/products/canvas-tote-1.jpg",
         "Natural canvas tote bag",
       ),
       image(
-        "https://images.unsplash.com/photo-1594223274512-ad4803739b7c?w=1200&q=85",
+        "/products/canvas-tote-2.jpg",
         "Canvas tote carried outdoors",
       ),
     ],

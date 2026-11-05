@@ -1,6 +1,7 @@
 import Link from "next/link";
 import { cacheLife } from "next/cache";
 import { brand } from "@/config/brand";
+import Container from "@/components/ui/Container";
 
 async function getCopyrightYear() {
   "use cache";
@@ -14,7 +15,7 @@ export async function Footer() {
 
   return (
     <footer className="mt-24 bg-brand text-background">
-      <div className="mx-auto grid max-w-6xl gap-10 px-6 py-16 sm:grid-cols-3">
+      <Container className="grid gap-10 py-16 sm:grid-cols-3">
         <div>
           <p className="font-heading text-3xl">{brand.name}</p>
           <p className="mt-3 text-sm text-background/70">{brand.tagline}</p>
@@ -48,7 +49,7 @@ export async function Footer() {
             <li>Contact</li>
           </ul>
         </div>
-      </div>
+      </Container>
       <div className="border-t border-background/20 py-6 text-center text-xs text-background/60">
         © {copyrightYear} {brand.name}
       </div>

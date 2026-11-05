@@ -11,6 +11,11 @@ export async function getAllProducts(): Promise<Product[]> {
   return mockProducts;
 }
 
+export async function getFeaturedProducts(limit = 4): Promise<Product[]> {
+  const all = await getAllProducts();
+  return all.filter((product) => product.featured).slice(0, limit);
+}
+
 export async function getProductBySlug(
   slug: string,
 ): Promise<Product | undefined> {
