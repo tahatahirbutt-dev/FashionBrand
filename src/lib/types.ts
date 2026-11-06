@@ -19,10 +19,12 @@ type ProductBase = {
   images: ProductImage[];
   badge?: "New" | "Bestseller";
   featured?: boolean;
+  collections?: string[];
 };
 
 export type FragranceProduct = ProductBase & {
   category: "fragrances";
+  scentFamily: string;
   notes: {
     top: string[];
     heart: string[];

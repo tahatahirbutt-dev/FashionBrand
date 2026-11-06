@@ -94,6 +94,10 @@
 | 2026-11-06 | Shared `Container` component | Consistent widths across sections |
 | 2026-11-06 | Cart = client Context + reducer + localStorage (temporary) | UI built now, replaced by Medusa's server cart later |
 
+| 2026-11-06 | Cross-sell rails deferred | Needs a real catalogue to be meaningful (client has no products yet) |
+| 2026-11-06 | Mega-menu deferred | Four flat categories; revisit at 6+ or when subcategories exist |
+| 2026-11-06 | Product data sheet sent to client | Validate the Product type against real data before Medusa |
+
 ## Portfolio goal
 - This project is also a portfolio piece for Taha (CV target: full-stack, React/Next.js gap).
 - Needs: live deployment (Vercel), case study write-up, n8n order automation, Medusa integration.

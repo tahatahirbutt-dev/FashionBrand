@@ -10,8 +10,10 @@ export const mockProducts: Product[] = [
     category: "fragrances",
     price: 8500,
     description: "A smoky, resinous signature scent with a warm finish.",
+    scentFamily: "Woody",
     badge: "Bestseller",
     featured: true,
+    collections: ["bestsellers", "gift-sets"],
     images: [
       image(
         "/products/oud-noir-1.jpg",
@@ -37,7 +39,9 @@ export const mockProducts: Product[] = [
     category: "fragrances",
     price: 12000,
     description: "Soft amber and vanilla wrapped in a veil of quiet spice.",
+    scentFamily: "Amber",
     badge: "New",
+    collections: ["new-arrivals", "seasonal"],
     images: [
       image(
         "/products/amber-veil-1.jpg",
@@ -64,6 +68,7 @@ export const mockProducts: Product[] = [
     price: 6500,
     description: "A relaxed linen layer designed for warm, easy days.",
     featured: true,
+    collections: ["seasonal"],
     images: [
       image(
         "/products/linen-overshirt-1.jpg",
@@ -94,6 +99,7 @@ export const mockProducts: Product[] = [
     price: 3200,
     description: "A substantial everyday tee with a clean, considered shape.",
     badge: "New",
+    collections: ["new-arrivals"],
     images: [
       image(
         "/products/heavy-cotton-tee-1.jpg",
@@ -124,6 +130,7 @@ export const mockProducts: Product[] = [
     price: 4800,
     description: "A weighty stainless-steel chain with a polished finish.",
     featured: true,
+    collections: ["gift-sets"],
     images: [
       image(
         "/products/steel-chain-bracelet-1.jpg",
@@ -147,6 +154,7 @@ export const mockProducts: Product[] = [
     price: 7200,
     description: "A solid signet silhouette softened by a satin brushed face.",
     badge: "Bestseller",
+    collections: ["bestsellers", "gift-sets"],
     images: [
       image(
         "/products/signet-ring-1.jpg",
@@ -170,6 +178,7 @@ export const mockProducts: Product[] = [
     price: 3900,
     description: "A slim leather cardholder made for the essentials.",
     featured: true,
+    collections: ["gift-sets"],
     images: [
       image(
         "/products/leather-cardholder-1.jpg",

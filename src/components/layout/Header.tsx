@@ -1,11 +1,12 @@
 import Link from "next/link";
 import { brand } from "@/config/brand";
 import CartButton from "@/components/cart/CartButton";
+import MobileNav from "@/components/layout/MobileNav";
 import Container from "@/components/ui/Container";
 
 export function Header() {
   return (
-    <header className="sticky top-0 z-50 border-b border-surface bg-background/90 backdrop-blur">
+    <header className="sticky top-0 z-50 border-b border-surface bg-background">
       <Container className="flex h-16 items-center justify-between">
         <Link href="/" className="font-heading text-2xl tracking-wide">
           {brand.name}
@@ -21,30 +22,21 @@ export function Header() {
               {category.label}
             </Link>
           ))}
+          {brand.utilityLinks.map((link) => (
+            <Link
+              key={link.href}
+              href={link.href}
+              className="text-xs uppercase tracking-[0.2em] transition-colors hover:text-accent"
+            >
+              {link.label}
+            </Link>
+          ))}
         </nav>
 
         <CartButton />
       </Container>
 
-      <nav className="border-t border-surface md:hidden" aria-label="Mobile">
-        <details>
-          <summary className="cursor-pointer px-6 py-3 text-xs uppercase tracking-[0.2em]">
-            Menu
-          </summary>
-          <ul className="border-t border-surface">
-            {brand.categories.map((category) => (
-              <li key={category.slug}>
-                <Link
-                  href={`/shop/${category.slug}`}
-                  className="block px-6 py-3 text-xs uppercase tracking-[0.2em] hover:bg-surface"
-                >
-                  {category.label}
-                </Link>
-              </li>
-            ))}
-          </ul>
-        </details>
-      </nav>
+      <MobileNav />
     </header>
   );
 }

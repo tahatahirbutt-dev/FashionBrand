@@ -26,6 +26,16 @@ export async function Footer() {
             Shop
           </p>
           <ul className="space-y-2 text-sm">
+            <li>
+              <Link href="/collections" className="hover:text-accent">
+                Collections
+              </Link>
+            </li>
+            <li>
+              <Link href={brand.giftGuideLink.href} className="hover:text-accent">
+                {brand.giftGuideLink.label}
+              </Link>
+            </li>
             {brand.categories.map((category) => (
               <li key={category.slug}>
                 <Link

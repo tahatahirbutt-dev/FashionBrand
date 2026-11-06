@@ -48,4 +48,9 @@ export const brand = {
       image: "/home/category-accessories.jpg",
     },
   ] as const satisfies readonly BrandCategory[],
+  utilityLinks: [
+    { label: "Collections", href: "/collections" },
+    { label: "Search", href: "/search" },
+  ] as const,
+  giftGuideLink: { label: "Gift Guide", href: "/gift-guide" },
 } as const;
