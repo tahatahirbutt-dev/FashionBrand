@@ -1,5 +1,6 @@
 import Link from "next/link";
 import { brand } from "@/config/brand";
+import CartButton from "@/components/cart/CartButton";
 import Container from "@/components/ui/Container";
 
 export function Header() {
@@ -22,7 +23,7 @@ export function Header() {
           ))}
         </nav>
 
-        <span className="text-xs uppercase tracking-[0.2em]">Cart (0)</span>
+        <CartButton />
       </Container>
 
       <nav className="border-t border-surface md:hidden" aria-label="Mobile">

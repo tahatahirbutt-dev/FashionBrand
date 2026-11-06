@@ -1,14 +1,19 @@
 "use client";
 
 import { useState } from "react";
+import { useCart } from "@/components/cart/CartProvider";
+import type { CartItem } from "@/lib/cart";
 import type { ProductOptions } from "@/lib/product-options";
 
 export default function ProductPurchase({
+  item,
   options,
 }: {
+  item: Omit<CartItem, "quantity" | "option">;
   options: ProductOptions | null;
 }) {
   const [selected, setSelected] = useState<string | null>(null);
+  const { addItem, openCart } = useCart();
   const needsSelection = options !== null && selected === null;
 
   return (
@@ -42,7 +47,8 @@ export default function ProductPurchase({
         type="button"
         disabled={needsSelection}
         onClick={() => {
-          // TODO: wire to the cart service when checkout is implemented.
+          addItem({ ...item, option: selected ?? undefined });
+          openCart();
         }}
         className="w-full bg-brand px-6 py-4 text-xs uppercase tracking-widest text-background transition-opacity hover:opacity-90 disabled:cursor-not-allowed disabled:opacity-40"
       >

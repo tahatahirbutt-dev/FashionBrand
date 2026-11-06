@@ -83,7 +83,16 @@ export default async function ProductPage({ params }: ProductPageProps) {
             <p className="mt-3 text-lg">{formatPrice(product.price)}</p>
             <p className="mt-6 leading-relaxed">{product.description}</p>
 
-            <ProductPurchase options={getProductOptions(product)} />
+            <ProductPurchase
+              item={{
+                productId: product.id,
+                slug: product.slug,
+                name: product.name,
+                price: product.price,
+                image: product.images[0],
+              }}
+              options={getProductOptions(product)}
+            />
             <div className="mt-10">
               <CategoryModules product={product} />
             </div>

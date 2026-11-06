@@ -71,6 +71,29 @@
 | 2026-10-28 | Backend (Medusa vs Shopify) deferred until payment/market answers | Avoid lock-in to wrong gateway |
 | 2026-10-28 | Data access via `src/lib/products.ts` | Swapping to Medusa later changes one file |
 
+## 6.1. Status / roadmap(5 nov  26)
+- [x] Requirements, stack, docs, dev environment
+- [x] Theme tokens + fonts, layout shell, ProductCard/ProductGrid
+- [x] Category and product pages (gallery, options, per-category modules)
+- [x] Home page (Hero, CategoryGrid, FeaturedProducts, BrandStory), shared Container
+- [x] Deployed to Vercel
+- [ ] Cart: client state (Context + reducer), drawer, header count
+- [ ] Cross-sell ("You may also like", "Complete the look")
+- [ ] Mobile nav + mega-menu
+- [ ] Shop filters, sort, search
+- [ ] Static pages (Our Story, FAQ, Shipping & Returns, Contact), Collections, Gift Guide
+- [ ] Medusa running locally, products.ts swapped to real data
+- [ ] Checkout + payments + shipping
+- [ ] n8n automations
+- [ ] SEO, performance, accessibility, custom domain, launch
+- [ ] Portfolio case study
+
+## 7.1. Decisions log (add) (5 nov 26)
+| 2026-11-06 | `Product` is a discriminated union on `category` | Type-safe category modules, new category = new type + module |
+| 2026-11-06 | All copy and images live in `brand.ts`, images optional | Ship without photography, client edits one file |
+| 2026-11-06 | Shared `Container` component | Consistent widths across sections |
+| 2026-11-06 | Cart = client Context + reducer + localStorage (temporary) | UI built now, replaced by Medusa's server cart later |
+
 ## Portfolio goal
 - This project is also a portfolio piece for Taha (CV target: full-stack, React/Next.js gap).
 - Needs: live deployment (Vercel), case study write-up, n8n order automation, Medusa integration.
